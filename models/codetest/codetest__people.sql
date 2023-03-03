@@ -1,3 +1,5 @@
+{{ config(materialized='table') }}
+
 with source_people as (
     select * from {{ source('AIRBYTE_DATABASE', 'PEOPLE') }}
 ),
