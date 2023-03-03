@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: AIRBYTE_DATABASE
+    description: 'db for codetest'
+    database: AIRBYTE_DATABASE
+    schema: AIRBYTE_SCHEMA
+    tables:
+      - name: PEOPLE
+        description: 'details about people'
+      - name: PLACES
+        description: 'details about places'
