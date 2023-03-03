@@ -9,8 +9,7 @@ I performed transformations in the following models/codetest
  
  I also performed the following tests
  
- /*:
   - person_id: unique, not null
   - city_id: unique, not null
- */
+ 
 
