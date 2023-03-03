@@ -8,5 +8,22 @@ sources:
     tables:
       - name: PEOPLE
         description: 'details about people'
+        columns:
+          - name: PERSON_ID
+            description: "primary key for this table"
+            tests: 
+              - unique
+              - not_null 
+          - name: PLACE_OF_BIRTH
+        tests:
+          - relationships:
+              to: ref('PLACES')
+              field: CITY
       - name: PLACES
         description: 'details about places'
+        columns:
+          - name: CITY_ID
+            description: "primary key for this table"
+            tests: 
+              - unique
+              - not_null 
