@@ -10,7 +10,11 @@ people as (
 
 final as (
 
-    select count(people.person_id) as people_born, places.county, places.country
+    select 
+        cast(count(people.person_id) as integer) as people_born, 
+        cast(places.county as varchar(30)) as county, 
+        cast(places.country as varchar(30)) as country
+        
     from people
 
     left join places
