@@ -2,11 +2,10 @@
 
 I performed transformations in the following models/codetest
 
-/*:
   - codetest_people
   - codetest_places
   - codetest_join
- */
+ 
  
  I also performed the following tests
  
